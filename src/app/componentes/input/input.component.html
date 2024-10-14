@@ -1,0 +1,12 @@
+<div class="input-field">
+    <label for="{{id}}"><span class="label-style">{{label}}</span></label>
+    <input
+        [readOnly]="readonly"
+        class=" {{disable == true ? 'disable' : ''}}"
+        type="{{type}}"
+        name="{{id}}"
+        id="{{id}}"
+        [value]="value"
+        (input)="onValueChange($event)"
+        >
+</div>
